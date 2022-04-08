@@ -213,7 +213,9 @@ input:focus {
     transition: 1s;
 }
 
-
+.bubbleimage:hover{
+    width: 50px;
+}
 
 .bubble:hover{
     /* border: 1px dashed #dceaf3; */
@@ -245,7 +247,7 @@ input:focus {
     width: 25vw;
     height: auto;
     background: linear-gradient(145deg, #ebf9ff, #c6d2db);
-    box-shadow:  7px 7px 16px #bbc6cf,
+    box-shadow:  7px 7px 16px #c7d8e6,
              -7px -7px 16px #fdffff;
     padding: 20px 30px;    
 }

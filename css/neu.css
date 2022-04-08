@@ -203,14 +203,14 @@ input:focus {
              -7px -7px 20px #ffffff;
     position: absolute;
     outline: 1px solid #ffffff;
-    transition: outline 1s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+    transition: outline .5s cubic-bezier(0.25, 1, 0.5, 1) 0s;
 }
 
 .bubbleimage{
     width: 60px;
     /* position: absolute; */
     z-index: 1;
-    transition: 1s;
+    transition: .5s;
 }
 
 .bubbleimage:hover{
@@ -296,4 +296,96 @@ input:focus {
 
 .activity2>.rightpart>.txt3{
     font-size: 15px;
+}
+
+.txt4>a{
+    color: #41baea;
+    transition: .5s;
+}
+
+.txt4>a:hover{
+    color: #41baea75;
+}
+
+/* Infographs Section--> */
+
+.infograph_main{
+    margin: 20px 30px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #d3e8fa,#e4eef7);
+    box-shadow:  24px 24px 20px #cad6e0,
+             -24px -24px 20px #eefcff;
+    /* height: 500px; */
+    /* border: 2px solid black; */
+}
+
+.options{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.opt1,
+.opt2,
+.opt3{
+    margin: 20px 30px;
+    border-radius: 15px;
+    background: #d3e8fa;
+    box-shadow: inset 5px 5px 20px #c0d3e4,
+            inset -5px -5px 20px #e6fdff;
+    color: #556f86;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.opt3>.dot{
+    border-radius: 15px;
+    background: linear-gradient(145deg, #31c4fa, #29a5d3);
+    box-shadow:  5px 5px 10px #1a6885,
+    -5px -5px 10px #42ffff;
+}
+
+.opt1>.dot, .opt2>.dot{
+    border-radius: 50%;
+    background: #daffff;
+    box-shadow:  5px 5px 11px #526166,
+             -5px -5px 11px #ffffff;
+    cursor: pointer;
+    transition: background-color .5s ease 0s;
+} 
+
+.opt1:hover .dot, .opt2:hover .dot{
+    background-color: #31c4fa;
+}
+
+.infogragh{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.num{
+    margin: 10px 30px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background-color: #31c4fa; */
+    width: fit-content;
+}
+
+.num>div{
+    margin-bottom: 20px;
+    text-align: right;
 }
